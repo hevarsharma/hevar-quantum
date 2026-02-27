@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Hexagon } from "lucide-react";
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -15,7 +16,10 @@ export default function Navbar() {
 
     return (
         <nav className={`navbar ${scrolled ? "navbarScrolled" : ""}`}>
-            <div className="logo">Hevar Quantum</div>
+            <div className="logo" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <Hexagon size={24} color="#3B82F6" strokeWidth={2.5} />
+                Hevar Quantum
+            </div>
 
             <div className="navRight">
                 <div className="links">

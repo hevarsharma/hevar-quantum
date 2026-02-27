@@ -411,72 +411,109 @@ body {
    RESPONSIVE
 ========================= */
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-/* =========================
-   RESPONSIVE
-========================= */
+@media (max-width: 1024px) {
+    .servicesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (max-width: 900px) {
-  .navbar {
-    padding: 20px 20px;
-  }
+    .navbar {
+        padding: 20px 20px;
+    }
 
-  .navRight {
-    gap: 20px;
-  }
+    .navRight {
+        gap: 20px;
+    }
 
-  .title {
-    font-size: 2.8rem;
-  }
+    .links {
+        display: none;
+        /* Hide standard links on mobile, would need a hamburger menu in an ideal world */
+    }
 
-  .subtitle {
-    font-size: 1.6rem;
-  }
+    .title {
+        font-size: 2.8rem;
+    }
 
-  .contactContainer {
-    flex-direction: column;
-  }
+    .subtitle {
+        font-size: 1.6rem;
+    }
 
-  .contactForm {
-    width: 100%;
-  }
+    .contactContainer {
+        flex-direction: column;
+    }
 
-  .footerContainer {
-    flex-direction: column;
-    text-align: center;
-  }
+    .contactForm {
+        width: 100%;
+    }
+
+    .footerContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .serviceSplit {
+        grid-template-columns: 1fr;
+    }
+
+    .contactInfo {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 768px) {
-  .serviceGrid {
-    grid-template-columns: 1fr;
-  }
+    .serviceGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .servicesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .products,
+    .services,
+    .vision,
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+
+    .sectionTitle {
+        font-size: 2rem !important;
+        margin-bottom: 40px !important;
+    }
+
+    .visionTitle {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 100%;
+    }
 }
 
-.navRight {
-    gap: 20px;
-}
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
 
-.title {
-    font-size: 2.8rem;
-}
+    .servicePage {
+        padding: 40px 15px;
+    }
 
-.subtitle {
-    font-size: 1.6rem;
-}
+    .page {
+        padding-top: 80px;
+    }
 
-.contactForm {
-    width: 100%;
-}
-
-.contactContainer {
-    flex-direction: column;
-}
-
-.footerContainer {
-    flex-direction: column;
-    text-align: center;
+    .featureGrid {
+        grid-template-columns: 1fr;
+    }
 }

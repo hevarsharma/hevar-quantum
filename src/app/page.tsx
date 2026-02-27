@@ -1,5 +1,9 @@
 import "./home.css";
 import Navbar from "./components/Navbar";
+import Services from "./components/Services";
+import { ArrowRight, Package, Cpu, Database } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -10,20 +14,20 @@ export default function Home() {
 
         {/* HERO */}
         <section className="hero">
-          <h1 className="title">Engineering Intelligence.</h1>
+          <h1 className="title fadeUp" style={{ animationDelay: '0.1s' }}>Engineering Intelligence.</h1>
 
-          <h2 className="subtitle">
+          <h2 className="subtitle fadeUp" style={{ animationDelay: '0.2s' }}>
             Building Scalable Future Systems.
           </h2>
 
-          <p className="description">
+          <p className="description fadeUp" style={{ animationDelay: '0.3s' }}>
             Hevar Quantum builds AI-driven platforms, secure backend architectures,
             and enterprise-grade data systems designed for scale.
           </p>
 
-          <div className="buttonContainer">
-            <a href="#products" className="primaryButton">
-              Explore Products
+          <div className="buttonContainer fadeUp" style={{ animationDelay: '0.4s' }}>
+            <a href="#products" className="primaryButton" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              Explore Products <ArrowRight size={18} />
             </a>
 
             <a href="#contact" className="secondaryButton">
@@ -32,84 +36,91 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Services Section */}
+        <Services />
+
         {/* PRODUCTS */}
-        <section id="products" className="products fadeUp">
-          <h2 className="sectionTitle">Products</h2>
+        <section id="products" className="products fadeUp" style={{ padding: '80px 20px', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
+          <h2 className="sectionTitle" style={{ fontSize: '3rem', fontWeight: 700, marginBottom: '60px', background: 'linear-gradient(to right, #06B6D4, #3B82F6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textAlign: 'center' }}>
+            Our Products
+          </h2>
+          <div className="cardContainer" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
+            <Link href="/products/logihub" style={{ textDecoration: 'none' }}>
+              <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', background: 'rgba(255, 255, 255, 0.02)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '20px', padding: '40px', backdropFilter: 'blur(10px)' }}>
+                <div style={{ background: 'rgba(59, 130, 246, 0.1)', padding: '16px', borderRadius: '12px', marginBottom: '20px' }}>
+                  <Package size={32} color="#3B82F6" />
+                </div>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '12px', color: '#F8FAFC' }}>LogiHub</h3>
+                <p style={{ color: '#9CA3AF', lineHeight: '1.6', fontSize: '1rem' }}>An end-to-end logistics automation and partner integration platform, mediating between e-commerce vendors and delivery channels.</p>
+              </div>
+            </Link>
 
-          <div className="cardContainer">
-            <div className="card">
-              <h3>LogiHub</h3>
-              <p>Logistics automation & partner integration platform.</p>
-            </div>
+            <Link href="/products/hevar-assistant" style={{ textDecoration: 'none' }}>
+              <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', background: 'rgba(255, 255, 255, 0.02)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '20px', padding: '40px', backdropFilter: 'blur(10px)' }}>
+                <div style={{ background: 'rgba(139, 92, 246, 0.1)', padding: '16px', borderRadius: '12px', marginBottom: '20px' }}>
+                  <Cpu size={32} color="#8B5CF6" />
+                </div>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '12px', color: '#F8FAFC' }}>Hevar Assistant</h3>
+                <p style={{ color: '#9CA3AF', lineHeight: '1.6', fontSize: '1rem' }}>An AI Agent engineered for voice and text, capable of document processing, QA, mathematical data logic, and file generation.</p>
+              </div>
+            </Link>
 
-            <div className="card">
-              <h3>Hevar Assistant</h3>
-              <p>AI-powered voice and document intelligence platform.</p>
-            </div>
-
-            <div className="card">
-              <h3>MS Visa</h3>
-              <p>Enterprise data transformation engine for modern analytics workflows.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* SERVICES */}
-        <section id="services" className="services fadeUp">
-          <h2 className="sectionTitle">Services</h2>
-
-          <div className="serviceGrid">
-            <div className="serviceCard">
-              <h3>AI System Development</h3>
-              <p>
-                Designing and deploying intelligent systems including LLM integrations,
-                voice interfaces, and document intelligence pipelines.
-              </p>
-            </div>
-
-            <div className="serviceCard">
-              <h3>Backend Architecture</h3>
-              <p>
-                Scalable distributed system design optimized for performance,
-                reliability, and observability.
-              </p>
-            </div>
-
-            <div className="serviceCard">
-              <h3>Enterprise Data Engineering</h3>
-              <p>
-                Databricks, SQL transformation engines, and high-performance data pipelines.
-              </p>
-            </div>
-
-            <div className="serviceCard">
-              <h3>Secure Cloud Deployment</h3>
-              <p>
-                End-to-end secure infrastructure with CI/CD, containerization,
-                and production monitoring.
-              </p>
-            </div>
+            <Link href="/products/ms-visa" style={{ textDecoration: 'none' }}>
+              <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', background: 'rgba(255, 255, 255, 0.02)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '20px', padding: '40px', backdropFilter: 'blur(10px)' }}>
+                <div style={{ background: 'rgba(6, 182, 212, 0.1)', padding: '16px', borderRadius: '12px', marginBottom: '20px' }}>
+                  <Database size={32} color="#06B6D4" />
+                </div>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '12px', color: '#F8FAFC' }}>MS Visa</h3>
+                <p style={{ color: '#9CA3AF', lineHeight: '1.6', fontSize: '1rem' }}>Enterprise SaaS data migration layer powered by Databricks LLMs to intelligently scale transformations on native Azure.</p>
+              </div>
+            </Link>
           </div>
         </section>
 
         {/* VISION */}
-        <section id="vision" className="vision fadeUp">
-          <h2 className="visionTitle">
+        <section id="vision" className="vision fadeUp" style={{ padding: '120px 20px', maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 className="visionTitle" style={{ fontSize: '3.5rem', fontWeight: 800, marginBottom: '40px', background: 'linear-gradient(to right, #8B5CF6, #06B6D4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Rethinking Intelligent Infrastructure
           </h2>
 
-          <p className="visionText">
-            At Hevar Quantum, we believe the next decade will be defined by intelligent,
-            self-evolving systems. Our mission is to engineer scalable architectures
-            that integrate AI, data, and distributed infrastructure — building
-            the foundation for the next layer of technological evolution.
-          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', fontSize: '1.2rem', color: '#9CA3AF', lineHeight: 1.8, textAlign: 'justify' }}>
+            <p>
+              At Hevar Quantum, we do not just build software; we engineer deep technological ecosystems. We believe the next epoch of enterprise capability will be defined by systems that are not merely functional, but <strong style={{ color: '#F8FAFC' }}>autonomously intelligent</strong> and inherently scalable.
+            </p>
+            <p>
+              Our architectural philosophy centers on decoupling complex monolithic structures into high-throughput, containerized microservices. By leveraging <strong style={{ color: '#F8FAFC' }}>advanced LLM-driven decision engines, real-time WebRTC networking, and distributed data lakes</strong>, we eliminate infrastructural bottlenecks.
+            </p>
+            <p>
+              Whether it is orchestrating zero-downtime CI/CD pipelines across multi-region Kubernetes clusters, or deploying active neural networks capable of parsing millions of unstructured documents milliseconds after ingestion, Hevar Quantum is constructing the foundational layer for the next iteration of the web.
+            </p>
+          </div>
+        </section>
 
-          <p className="visionText">
-            From logistics automation to AI-powered document intelligence and
-            enterprise data transformation, we design systems that are not only
-            performant and secure — but built to evolve.
-          </p>
+        {/* LEADERSHIP */}
+        <section id="leadership" className="fadeUp" style={{ padding: '80px 20px 120px 20px', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
+          <div style={{ background: 'linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(2, 6, 23, 0.9) 100%)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '32px', padding: '60px', display: 'flex', flexWrap: 'wrap', gap: '60px', alignItems: 'center', boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }}>
+            <div style={{ flex: '1 1 300px', position: 'relative' }}>
+              <div style={{ position: 'absolute', inset: '-10px', background: 'linear-gradient(135deg, #3B82F6, #8B5CF6)', opacity: 0.3, filter: 'blur(20px)', borderRadius: '24px' }}></div>
+              <Image
+                src="/team/hemant_sharma.png"
+                alt="Hemant Sharma - Founder"
+                width={400}
+                height={400}
+                style={{ width: '100%', height: 'auto', borderRadius: '20px', position: 'relative', zIndex: 1, border: '1px solid rgba(255,255,255,0.1)' }}
+              />
+            </div>
+            <div style={{ flex: '2 1 400px' }}>
+              <h2 style={{ fontSize: '1rem', textTransform: 'uppercase', color: '#3B82F6', fontWeight: 700, marginBottom: '8px', letterSpacing: '0.1em' }}>Leadership</h2>
+              <h3 style={{ fontSize: '3.5rem', fontWeight: 800, color: '#F8FAFC', marginBottom: '8px', lineHeight: 1.1 }}>Hemant Sharma</h3>
+              <h4 style={{ fontSize: '1.4rem', color: '#9CA3AF', marginBottom: '30px', fontWeight: 400 }}>Founder & Principal Architect</h4>
+              <p style={{ color: '#E5E7EB', fontSize: '1.15rem', lineHeight: 1.7, marginBottom: '24px' }}>
+                With a deep specialization in distributed backend engines and applied artificial intelligence, Hemant drives the technical vision of Hevar Quantum. His philosophy centers on aggressively replacing legacy, manual workflows with mathematically sound, automated pipelines.
+              </p>
+              <p style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.6 }}>
+                Under his leadership, Hevar Quantum functions not just as a development agency, but as an advanced engineering partner capable of architecting foundational systems that gracefully handle infinite scale.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* CONTACT */}
