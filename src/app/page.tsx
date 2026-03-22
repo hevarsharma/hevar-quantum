@@ -102,7 +102,7 @@ export default function Home() {
             <div style={{ flex: '1 1 300px', position: 'relative' }}>
               <div style={{ position: 'absolute', inset: '-10px', background: 'linear-gradient(135deg, #3B82F6, #8B5CF6)', opacity: 0.3, filter: 'blur(20px)', borderRadius: '24px' }}></div>
               <Image
-                src="/team/hemant_sharma.png"
+                src="/team/hemant_sharma.jpg"
                 alt="Hemant Sharma - Founder"
                 width={400}
                 height={400}
