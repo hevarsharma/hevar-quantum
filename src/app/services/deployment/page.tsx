@@ -83,7 +83,7 @@ export default function Deployment() {
 
       <footer className="footer" style={{ marginTop: 0 }}>
         <div className="footerBottom">
-          © {new Date().getFullYear()} Hevar Quantum. All rights reserved.
+          © {new Date().getFullYear()} Hevar Technologies. All rights reserved.
         </div>
       </footer>
     </div>

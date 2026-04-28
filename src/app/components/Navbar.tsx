@@ -18,7 +18,7 @@ export default function Navbar() {
         <nav className={`navbar ${scrolled ? "navbarScrolled" : ""}`}>
             <div className="logo" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <Hexagon size={24} color="#3B82F6" strokeWidth={2.5} />
-                Hevar Quantum
+                Hevar Technologies
             </div>
 
             <div className="navRight">

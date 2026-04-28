@@ -21,7 +21,7 @@ export default function Home() {
           </h2>
 
           <p className="description fadeUp" style={{ animationDelay: '0.3s' }}>
-            Hevar Quantum builds AI-driven platforms, secure backend architectures,
+            Hevar Technologies builds AI-driven platforms, secure backend architectures,
             and enterprise-grade data systems designed for scale.
           </p>
 
@@ -85,13 +85,13 @@ export default function Home() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', fontSize: '1.2rem', color: '#9CA3AF', lineHeight: 1.8, textAlign: 'justify' }}>
             <p>
-              At Hevar Quantum, we do not just build software; we engineer deep technological ecosystems. We believe the next epoch of enterprise capability will be defined by systems that are not merely functional, but <strong style={{ color: '#F8FAFC' }}>autonomously intelligent</strong> and inherently scalable.
+              At Hevar Technologies, we do not just build software; we engineer deep technological ecosystems. We believe the next epoch of enterprise capability will be defined by systems that are not merely functional, but <strong style={{ color: '#F8FAFC' }}>autonomously intelligent</strong> and inherently scalable.
             </p>
             <p>
               Our architectural philosophy centers on decoupling complex monolithic structures into high-throughput, containerized microservices. By leveraging <strong style={{ color: '#F8FAFC' }}>advanced LLM-driven decision engines, real-time WebRTC networking, and distributed data lakes</strong>, we eliminate infrastructural bottlenecks.
             </p>
             <p>
-              Whether it is orchestrating zero-downtime CI/CD pipelines across multi-region Kubernetes clusters, or deploying active neural networks capable of parsing millions of unstructured documents milliseconds after ingestion, Hevar Quantum is constructing the foundational layer for the next iteration of the web.
+              Whether it is orchestrating zero-downtime CI/CD pipelines across multi-region Kubernetes clusters, or deploying active neural networks capable of parsing millions of unstructured documents milliseconds after ingestion, Hevar Technologies is constructing the foundational layer for the next iteration of the web.
             </p>
           </div>
         </section>
@@ -114,10 +114,10 @@ export default function Home() {
               <h3 style={{ fontSize: '3.5rem', fontWeight: 800, color: '#F8FAFC', marginBottom: '8px', lineHeight: 1.1 }}>Hemant Sharma</h3>
               <h4 style={{ fontSize: '1.4rem', color: '#9CA3AF', marginBottom: '30px', fontWeight: 400 }}>Founder & Principal Architect</h4>
               <p style={{ color: '#E5E7EB', fontSize: '1.15rem', lineHeight: 1.7, marginBottom: '24px' }}>
-                With a deep specialization in distributed backend engines and applied artificial intelligence, Hemant drives the technical vision of Hevar Quantum. His philosophy centers on aggressively replacing legacy, manual workflows with mathematically sound, automated pipelines.
+                With a deep specialization in distributed backend engines and applied artificial intelligence, Hemant drives the technical vision of Hevar Technologies. His philosophy centers on aggressively replacing legacy, manual workflows with mathematically sound, automated pipelines.
               </p>
               <p style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.6 }}>
-                Under his leadership, Hevar Quantum functions not just as a development agency, but as an advanced engineering partner capable of architecting foundational systems that gracefully handle infinite scale.
+                Under his leadership, Hevar Technologies functions not just as a development agency, but as an advanced engineering partner capable of architecting foundational systems that gracefully handle infinite scale.
               </p>
             </div>
           </div>
@@ -161,7 +161,7 @@ export default function Home() {
         <footer className="footer">
           <div className="footerContainer">
             <div className="footerBrand">
-              <h3>Hevar Quantum</h3>
+              <h3>Hevar Technologies</h3>
               <p>
                 Engineering intelligent infrastructure for the next generation
                 of scalable systems.
@@ -183,7 +183,7 @@ export default function Home() {
           </div>
 
           <div className="footerBottom">
-            © {new Date().getFullYear()} Hevar Quantum. All rights reserved.
+            © {new Date().getFullYear()} Hevar Technologies. All rights reserved.
           </div>
         </footer>
 
