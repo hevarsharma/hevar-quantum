@@ -47,25 +47,33 @@ export default function Home() {
           <div className="cardContainer" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
             <Link href="/products/logihub" style={{ textDecoration: 'none' }}>
               <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', background: 'rgba(255, 255, 255, 0.02)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '20px', padding: '40px', backdropFilter: 'blur(10px)' }}>
-                <div style={{ background: 'rgba(59, 130, 246, 0.1)', padding: '16px', borderRadius: '12px', marginBottom: '20px' }}>
-                  <Package size={32} color="#3B82F6" />
-                </div>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '12px', color: '#F8FAFC' }}>LogiHub</h3>
+                <Image
+                  src="/products/logihub_front.png"
+                  alt="Hevar LogiHub Snapshot"
+                  width={400}
+                  height={225}
+                  style={{ width: '100%', height: 'auto', borderRadius: '12px', marginBottom: '20px', border: '1px solid rgba(255,255,255,0.1)' }}
+                />
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '12px', color: '#F8FAFC' }}>Hevar LogiHub</h3>
                 <p style={{ color: '#9CA3AF', lineHeight: '1.6', fontSize: '1rem' }}>An end-to-end logistics automation and partner integration platform, mediating between e-commerce vendors and delivery channels.</p>
               </div>
             </Link>
 
             <Link href="/products/hevar-assistant" style={{ textDecoration: 'none' }}>
               <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', background: 'rgba(255, 255, 255, 0.02)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '20px', padding: '40px', backdropFilter: 'blur(10px)' }}>
-                <div style={{ background: 'rgba(139, 92, 246, 0.1)', padding: '16px', borderRadius: '12px', marginBottom: '20px' }}>
-                  <Cpu size={32} color="#8B5CF6" />
-                </div>
+                <Image
+                  src="/products/hevar_assistant_front.png"
+                  alt="Hevar Assistant Snapshot"
+                  width={400}
+                  height={225}
+                  style={{ width: '100%', height: 'auto', borderRadius: '12px', marginBottom: '20px', border: '1px solid rgba(255,255,255,0.1)' }}
+                />
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '12px', color: '#F8FAFC' }}>Hevar Assistant</h3>
                 <p style={{ color: '#9CA3AF', lineHeight: '1.6', fontSize: '1rem' }}>An AI Agent engineered for voice and text, capable of document processing, QA, mathematical data logic, and file generation.</p>
               </div>
             </Link>
 
-            <Link href="/products/ms-visa" style={{ textDecoration: 'none' }}>
+            {/* <Link href="/products/ms-visa" style={{ textDecoration: 'none' }}>
               <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', background: 'rgba(255, 255, 255, 0.02)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '20px', padding: '40px', backdropFilter: 'blur(10px)' }}>
                 <div style={{ background: 'rgba(6, 182, 212, 0.1)', padding: '16px', borderRadius: '12px', marginBottom: '20px' }}>
                   <Database size={32} color="#06B6D4" />
@@ -73,7 +81,7 @@ export default function Home() {
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '12px', color: '#F8FAFC' }}>MS Visa</h3>
                 <p style={{ color: '#9CA3AF', lineHeight: '1.6', fontSize: '1rem' }}>Enterprise SaaS data migration layer powered by Databricks LLMs to intelligently scale transformations on native Azure.</p>
               </div>
-            </Link>
+            </Link> */}
           </div>
         </section>
 

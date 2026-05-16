@@ -23,7 +23,7 @@ export default function SpaceNetworking() {
 
           <div className="fadeUp" style={{ animationDelay: '0.2s', position: 'relative', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.08)', boxShadow: '0 0 40px rgba(16, 185, 129, 0.1)' }}>
             <Image
-              src="/services/space_networking_header_1772177099184.png"
+              src="/services/space_networking_ui_latest.png"
               alt="Space Networking Innovation"
               width={800}
               height={450}

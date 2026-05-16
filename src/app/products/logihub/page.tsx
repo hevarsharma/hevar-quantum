@@ -13,7 +13,7 @@ export default function LogiHub() {
                     <Package size={18} /> Flagship Product
                 </div>
                 <h1 className="fadeUp" style={{ animationDelay: '0.1s', fontSize: '5rem', fontWeight: 800, marginBottom: '20px', lineHeight: 1.1, background: 'linear-gradient(135deg, #FFFFFF 0%, #3B82F6 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', letterSpacing: '-0.02em' }}>
-                    LogiHub.
+                    Hevar LogiHub.
                 </h1>
                 <p className="fadeUp" style={{ animationDelay: '0.2s', fontSize: '1.4rem', color: '#9CA3AF', lineHeight: 1.6, maxWidth: '700px', margin: '0 auto 40px auto' }}>
                     The ultimate e-commerce SaaS mediator. We seamlessly connect vendors to delivery channels, automating the logistics pipeline with unprecedented scale and clarity.
@@ -29,8 +29,8 @@ export default function LogiHub() {
             <div className="fadeUp" style={{ animationDelay: '0.4s', width: '100%', maxWidth: '1000px', margin: '0 auto 120px auto', padding: '0 20px' }}>
                 <div style={{ position: 'relative', borderRadius: '32px', overflow: 'hidden', border: '1px solid rgba(59, 130, 246, 0.2)', boxShadow: '0 30px 60px rgba(0,0,0,0.5), 0 0 100px rgba(59, 130, 246, 0.15)' }}>
                     <Image
-                        src="/products/logihub_product_header_1772182824275.png"
-                        alt="LogiHub Logistics Dashboard"
+                        src="/products/logihub_front.png"
+                        alt="Hevar LogiHub Logistics Dashboard"
                         width={1000}
                         height={562}
                         style={{ width: '100%', height: 'auto', display: 'block' }}
@@ -95,6 +95,32 @@ export default function LogiHub() {
                         <h3 style={{ fontSize: '1.8rem', color: '#F8FAFC', marginBottom: '16px' }}>Real-time Shipping</h3>
                         <p style={{ color: '#9CA3AF', lineHeight: 1.6, fontSize: '1.1rem' }}>Live webhook integrations with Delhivery, DTDC, and Bluedart providing millisecond-accurate tracking state payloads to your vendors.</p>
                     </div>
+                </div>
+            </div>
+
+            {/* PLATFORM TOUR GALLERY */}
+            <div style={{ maxWidth: '1200px', margin: '0 auto 120px auto', padding: '0 20px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+                    <h2 style={{ fontSize: '3rem', fontWeight: 700, color: '#F8FAFC', marginBottom: '20px' }}>Platform Capabilities</h2>
+                    <p style={{ fontSize: '1.2rem', color: '#9CA3AF', maxWidth: '600px', margin: '0 auto' }}>Explore the intuitive interfaces designed for maximum operational efficiency.</p>
+                </div>
+                
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '40px' }}>
+                    {[
+                        { src: "/products/logihub_desc_1.png", title: "Secure Access", desc: "Enterprise-grade authentication and role-based access control." },
+                        { src: "/products/logihub_desc_3.png", title: "Main Dashboard", desc: "Command center for daily operations and high-level metrics." },
+                        { src: "/products/logihub_desc_4.png", title: "Order Management", desc: "Granular control over all shipments, vendors, and courier assignments." },
+                        { src: "/products/logihub_desc_2.png", title: "Finance & Billing", desc: "Real-time reconciliation of revenue, profit margins, and courier expenses." },
+                        { src: "/products/logihub_desc_5.png", title: "Data Export", desc: "Flexible, filter-based exports for custom reporting and external analytics." }
+                    ].map((img, i) => (
+                        <div key={i} className="fadeUp" style={{ animationDelay: `${(i % 3) * 0.1}s`, background: 'rgba(255, 255, 255, 0.02)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '24px', overflow: 'hidden', padding: '20px' }}>
+                            <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(59, 130, 246, 0.2)', marginBottom: '20px' }}>
+                                <Image src={img.src} alt={img.title} width={800} height={450} style={{ width: '100%', height: 'auto', display: 'block' }} />
+                            </div>
+                            <h3 style={{ fontSize: '1.5rem', color: '#F8FAFC', marginBottom: '10px' }}>{img.title}</h3>
+                            <p style={{ color: '#9CA3AF', fontSize: '1rem', lineHeight: 1.6 }}>{img.desc}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
 

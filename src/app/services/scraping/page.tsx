@@ -23,7 +23,7 @@ export default function Scraping() {
 
           <div className="fadeUp" style={{ animationDelay: '0.2s', position: 'relative', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.08)', boxShadow: '0 0 40px rgba(239, 68, 68, 0.1)' }}>
             <Image
-              src="/services/scraping_header_1772177178009.png"
+              src="/services/scraping_ui_latest.png"
               alt="Data Scraping Architecture"
               width={800}
               height={450}

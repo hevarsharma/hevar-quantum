@@ -23,7 +23,7 @@ export default function ChatbotDevelopment() {
 
           <div className="fadeUp" style={{ animationDelay: '0.2s', position: 'relative', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.08)', boxShadow: '0 0 40px rgba(245, 158, 11, 0.1)' }}>
             <Image
-              src="/services/chatbot_development_header_1772177111670.png"
+              src="/services/chatbot_ui_latest.png"
               alt="Chatbot Semantic Tree"
               width={800}
               height={450}

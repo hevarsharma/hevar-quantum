@@ -29,7 +29,7 @@ export default function HevarAssistant() {
             <div className="fadeUp" style={{ animationDelay: '0.4s', width: '100%', maxWidth: '1000px', margin: '0 auto 120px auto', padding: '0 20px' }}>
                 <div style={{ position: 'relative', borderRadius: '32px', overflow: 'hidden', border: '1px solid rgba(139, 92, 246, 0.2)', boxShadow: '0 30px 60px rgba(0,0,0,0.5), 0 0 100px rgba(139, 92, 246, 0.15)' }}>
                     <Image
-                        src="/products/hevar_assistant_product_header_1772182839817.png"
+                        src="/products/hevar_assistant_front.png"
                         alt="Hevar AI Assistant Core"
                         width={1000}
                         height={562}
@@ -95,6 +95,30 @@ export default function HevarAssistant() {
                         <h3 style={{ fontSize: '1.8rem', color: '#F8FAFC', marginBottom: '16px' }}>Continuous Learning Loop</h3>
                         <p style={{ color: '#9CA3AF', lineHeight: 1.6, fontSize: '1.1rem' }}>The agent actively learns from your company&apos;s nomenclature and preferred formatting standards over time, getting sharper every week.</p>
                     </div>
+                </div>
+            </div>
+
+            {/* PLATFORM TOUR GALLERY */}
+            <div style={{ maxWidth: '1200px', margin: '0 auto 120px auto', padding: '0 20px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+                    <h2 style={{ fontSize: '3rem', fontWeight: 700, color: '#F8FAFC', marginBottom: '20px' }}>Interface Capabilities</h2>
+                    <p style={{ fontSize: '1.2rem', color: '#9CA3AF', maxWidth: '600px', margin: '0 auto' }}>A seamless, distraction-free environment for pure intelligence interaction.</p>
+                </div>
+                
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '40px' }}>
+                    {[
+                        { src: "/products/hevar_desc_1.png", title: "Secure Portal", desc: "Enterprise-grade authentication layer for context-aware sessions." },
+                        { src: "/products/hevar_desc_2.png", title: "Active Listening", desc: "Real-time conversational voice interface for deep data querying." },
+                        { src: "/products/hevar_desc_3.png", title: "Context Initialization", desc: "Instant preparation of mathematical models and vector databases." }
+                    ].map((img, i) => (
+                        <div key={i} className="fadeUp" style={{ animationDelay: `${(i % 3) * 0.1}s`, background: 'rgba(255, 255, 255, 0.02)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '24px', overflow: 'hidden', padding: '20px' }}>
+                            <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(139, 92, 246, 0.2)', marginBottom: '20px' }}>
+                                <Image src={img.src} alt={img.title} width={800} height={450} style={{ width: '100%', height: 'auto', display: 'block' }} />
+                            </div>
+                            <h3 style={{ fontSize: '1.5rem', color: '#F8FAFC', marginBottom: '10px' }}>{img.title}</h3>
+                            <p style={{ color: '#9CA3AF', fontSize: '1rem', lineHeight: 1.6 }}>{img.desc}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
 

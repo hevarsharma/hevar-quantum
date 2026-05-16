@@ -23,7 +23,7 @@ export default function EcommerceIntegration() {
 
                     <div className="fadeUp" style={{ animationDelay: '0.2s', position: 'relative', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.08)', boxShadow: '0 0 40px rgba(59, 130, 246, 0.1)' }}>
                         <Image
-                            src="/services/ecommerce_integration_header_1772176991818.png"
+                            src="/services/ecommerce_ui_latest.png"
                             alt="Ecommerce Integration Architecture"
                             width={800}
                             height={450}

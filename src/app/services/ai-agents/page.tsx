@@ -23,7 +23,7 @@ export default function AiAgents() {
 
                     <div className="fadeUp" style={{ animationDelay: '0.2s', position: 'relative', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.08)', boxShadow: '0 0 40px rgba(139, 92, 246, 0.1)' }}>
                         <Image
-                            src="/services/ai_agents_header_1772177037254.png"
+                            src="/services/ai_agents_ui_latest.png"
                             alt="AI Agent Architecture"
                             width={800}
                             height={450}

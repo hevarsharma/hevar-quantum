@@ -23,7 +23,7 @@ export default function SocialIntegration() {
 
           <div className="fadeUp" style={{ animationDelay: '0.2s', position: 'relative', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.08)', boxShadow: '0 0 40px rgba(236, 72, 153, 0.1)' }}>
             <Image
-              src="/services/social_integration_header_1772177228508.png"
+              src="/services/social_integration_ui_latest.png"
               alt="Social Integration Architecture"
               width={800}
               height={450}
