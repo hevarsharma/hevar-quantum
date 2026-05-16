@@ -44,7 +44,7 @@ export default function Home() {
           <h2 className="sectionTitle" style={{ fontSize: '3rem', fontWeight: 700, marginBottom: '60px', background: 'linear-gradient(to right, #06B6D4, #3B82F6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textAlign: 'center' }}>
             Our Products
           </h2>
-          <div className="cardContainer" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
+          <div className="cardContainer">
             <Link href="/products/logihub" style={{ textDecoration: 'none' }}>
               <div className="card" style={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', background: 'rgba(255, 255, 255, 0.02)', border: '1px solid rgba(255, 255, 255, 0.05)', borderRadius: '20px', padding: '40px', backdropFilter: 'blur(10px)' }}>
                 <Image
