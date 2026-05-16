@@ -1,7 +1,7 @@
 import "./home.css";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
-import { ArrowRight, Package, Cpu, Database } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
